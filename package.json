@@ -1,0 +1,26 @@
+{
+  "name": "ChinmayTouristInformation",
+  "version": "0.0.3",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.9.2",
+    "botmaster": "^3.1.1",
+    "botmaster-fulfill": "^3.2.0",
+    "botmaster-fulfill-actions": "^1.1.2",
+    "botmaster-messenger": "^1.0.1",
+    "botmaster-session-ware": "^1.1.0",
+    "botmaster-socket.io": "^1.0.2",
+    "botmaster-watson-conversation-ware": "^1.1.2",
+    "cfenv": "https://registry.npmjs.org/cfenv/-/cfenv-1.0.0.tgz",
+    "express": "~4.9.8"
+  },
+  "repository": {
+    
+  },
+  "engines": {
+    "node": "6.8.0"
+  }
+}
