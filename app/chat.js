@@ -14,28 +14,25 @@ const WatsonConversationWare = require('botmaster-watson-conversation-ware');
 const {fulfillOutgoingWare} = require('botmaster-fulfill');
 const SessionWare     = require('botmaster-session-ware');
 
-    
-    // actions = require('botmaster-fulfill-actions');
-
 const messengerSettings = {
-    credentials: {
-        verifyToken: 'tourist_information',
-        pageToken: 'EAAE9yAdQNWcBAA3q8jbJtPZCLd3yS2gszoDlpFAkRYbU6jHcI5uWFssNynKb7k1Gic3NFcsYCutMnwuAlJcBXaOzlPk1VCB5c1ZA4ryVx2jhrXZC3sckeXQxFkQGX4E263Ego2QDX8D5JEB0VyWbM9MYAxfF9jQuqRPgcMooJXPeM5iYsBd',
-        fbAppSecret: 'c13364b6f3595e001acabda4ce4dd875'
-    },
-    webhookEndpoint: 'webhook'  // botmaster will mount this webhook on https://Your_Domain_Name/messenger/webhook
+  credentials: {
+    verifyToken: 'tourist_information',
+    pageToken: 'EAAE9yAdQNWcBAA3q8jbJtPZCLd3yS2gszoDlpFAkRYbU6jHcI5uWFssNynKb7k1Gic3NFcsYCutMnwuAlJcBXaOzlPk1VCB5c1ZA4ryVx2jhrXZC3sckeXQxFkQGX4E263Ego2QDX8D5JEB0VyWbM9MYAxfF9jQuqRPgcMooJXPeM5iYsBd',
+    fbAppSecret: 'c13364b6f3595e001acabda4ce4dd875'
+  },
+  webhookEndpoint: 'webhook'  // botmaster will mount this webhook on https://Your_Domain_Name/messenger/webhook
 };
 const messengerBot = new MessengerBot(messengerSettings);
 
 
 const watsonConversationWareOptions = {
-    settings: {
-        "username": "09ac434f-0801-46ef-807f-30821f24de3d",
-        "password": "7HCrkJcMFzOr",
-        version: 'v1', // as of this writing (01 Apr 2017), only v1 is available
-        version_date: '2017-02-03' // latest version-date as of this writing
-    },
-    workspaceId: "20c2f105-d8f1-4a0d-bad0-5ee87bffca70" // As provided by Watson Conversation
+  settings: {
+    "username": "09ac434f-0801-46ef-807f-30821f24de3d",
+    "password": "7HCrkJcMFzOr",
+    version: 'v1', // as of this writing (01 Apr 2017), only v1 is available
+    version_date: '2017-02-03' // latest version-date as of this writing
+  },
+  workspaceId: "20c2f105-d8f1-4a0d-bad0-5ee87bffca70" // As provided by Watson Conversation
 };
 const watsonConversationWare = WatsonConversationWare(watsonConversationWareOptions);
 

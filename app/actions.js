@@ -38,4 +38,25 @@ const actions = require('botmaster-fulfill-actions');
 //     }
 // };
 
+/*
+ * To query this index, use the database .search() method. The first argument is the design document name, followed by 
+ * the index name, and finally an object with your search parameters.
+ *
+  db.search('library', 'books', {q:'author:dickens'}, function(er, result) {
+  if (er) {
+    throw er;
+  }
+
+  console.log('Showing %d out of a total %d books by Dickens', result.rows.length, result.total_rows);
+  for (var i = 0; i < result.rows.length; i++) {
+    console.log('Document id: %s', result.rows[i].id);
+  }
+});
+
+Or see https://stackoverflow.com/questions/41061434/how-to-do-a-simple-find-on-cloudant
+
+ */
+
+
+
 module.exports = actions;
